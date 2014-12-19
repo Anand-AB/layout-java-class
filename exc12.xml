@@ -73,7 +73,6 @@
                     android:layout_alignParentTop="true"
                     android:layout_toRightOf="@+id/textView2"
                     android:ems="10"
-                    android:gravity="right"
                     android:hint="anandab"
                     android:textSize="12sp" />
             </RelativeLayout>
@@ -102,7 +101,6 @@
                     android:layout_alignParentTop="true"
                     android:layout_toRightOf="@+id/textView4"
                     android:ems="10"
-                    android:gravity="right"
                     android:hint="markib"
                     android:textSize="12sp" />
             </RelativeLayout>
@@ -247,11 +245,11 @@
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="show"
-            android:clickable="true"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:text="PERFORMANCE POTENTIAL"
+            android:clickable="true"
+            android:onClick="show"
+            android:text="SUBMIT"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textColor="#DADADA"
             android:textSize="12sp" />
@@ -314,9 +312,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_alignParentTop="true"
                 android:ems="10"
-                android:gravity="end"
-                android:hint="10/04/1993"
-                android:textColor="#dadada" />
+                android:hint="DD/MM/YYYY" />
 
             <TextView
                 android:id="@+id/textView11"
@@ -336,16 +332,7 @@
             android:layout_weight="1.0"
             android:background="#DADADA" >
 
-            <EditText
-                android:id="@+id/editText8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:ems="10"
-                android:gravity="end"
-                android:hint="Male"
-                android:textColor="#dadada" />
+            
 
             <TextView
                 android:id="@+id/textView12"
@@ -356,6 +343,29 @@
                 android:layout_marginLeft="5dp"
                 android:text="Gender"
                 android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female" />
+            </RadioGroup>
+
         </RelativeLayout>
 
         <RelativeLayout
@@ -371,10 +381,8 @@
                 android:layout_alignParentRight="true"
                 android:layout_alignParentTop="true"
                 android:ems="10"
-                android:gravity="end"
                 android:hint="70"
-                android:inputType="numberDecimal"
-                android:textColor="#dadada" />
+                android:inputType="numberDecimal" />
 
             <TextView
                 android:id="@+id/textView13"
